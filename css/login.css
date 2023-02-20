@@ -1,0 +1,145 @@
+@import url('./redefinir.css');
+
+#general-container{
+  width: calc(100% - 10%);
+  max-width: 42rem;
+  background: lightblue;
+  margin: 0 auto; 
+  border-radius: 5px;
+}
+
+header {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ padding: 1rem;
+ background: rgba(255,255,255,.8);
+}
+
+header img{
+  width: 2.8rem;
+}
+
+header span{
+font-size: 1.3rem;
+}
+
+#profile {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.profile__picture{
+  padding-top: 2rem;
+ width: 100px;
+ height: 120px;
+}
+
+
+#profile img{
+ width: 100%;
+ height: 100%;
+ border: 10px solid lightcoral;
+ border-radius: 8px;
+ object-fit: cover;
+}
+
+#profile p:nth-child(2){
+  padding: 2rem 0 1rem 0;
+  font-size: 1.6rem;
+}
+#profile p:nth-child(3){
+  font-size: 1.2rem;
+}
+#profile p:nth-child(3) span{
+  color: blue;
+  cursor: pointer;
+}
+
+form{
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: .8rem;
+}
+
+#email, #password{
+  width: 100%;
+  margin: .4rem 0;
+  border-radius: .2rem;
+  border: none;
+  padding: .3rem;
+  border-top: 1px solid #ccc;
+  outline: none;
+}
+:is(#email,#password)::placeholder{
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.status{
+  padding: 1.6rem 0;
+  font-size: 1.2rem;
+}
+.status span::after{
+  content: '';
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background: green;
+  margin:0 .5rem;
+  border-radius: 2px;
+}
+
+.status select{
+  font-size: 1.2rem;
+  border: none;
+  padding: .2rem;
+  border-radius: 3px;
+}
+.checkboxs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem 0 .4rem 0;
+}
+
+.checkboxs label{
+  font-size: 1.2rem;
+  padding-left: .8rem;
+}
+.recover{
+  font-size: 1.2rem;
+  padding: .4rem 0 ;
+  color: blue;
+  cursor: pointer;
+}
+
+button{
+  margin: 1rem auto;
+  padding: .3rem 1.6rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background: rgb(203,251,246);
+background: -moz-linear-gradient(180deg, rgba(203,251,246,1) 24%, rgba(158,251,244,1) 65%);
+background: -webkit-linear-gradient(180deg, rgba(203,251,246,1) 24%, rgba(158,251,244,1) 65%);
+background: linear-gradient(180deg, rgba(203,251,246,1) 24%, rgba(158,251,244,1) 65%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbfbf6",endColorstr="#9efbf4",GradientType=1);
+}
+
+button:focus{
+  background: rgb(87,214,200);
+background: -moz-linear-gradient(180deg, rgba(87,214,200,1) 24%, rgba(158,251,244,1) 65%);
+background: -webkit-linear-gradient(180deg, rgba(87,214,200,1) 24%, rgba(158,251,244,1) 65%);
+background: linear-gradient(180deg, rgba(87,214,200,1) 24%, rgba(158,251,244,1) 65%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57d6c8",endColorstr="#9efbf4",GradientType=1);
+}

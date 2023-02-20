@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Beta Message - login</title>
+</head>
+
+<body>
+  <div id="general-container">
+    <header>
+      <img src="../img/iconeMsn.png" alt="">
+      <span>Windows Live Messenger</span>
+    </header>
+
+    <section id="profile">
+      <div class="profile__picture">
+        <img src="../img/chis.jpg" alt="picture">
+      </div>
+      <p>Entrar</p>
+      <p>Entre com seu Windows Live ID. Não possui? <span>Inscreva-se</span></p>
+    </section>
+
+    <form>
+      <input type="email" name="email" id="email" placeholder="Example555@hotmail.com">
+      <input type="password" name="password" id="password" placeholder="Insira sua senha">
+  
+       <div class="status">
+        <span>Entrar como:</span>
+         <select name="select">
+          <option value="valor1">Disponivel</option>
+          <option value="valor1">Ocupado</option>
+          <option value="valor1">Ausente</option>
+          <option value="valor1">Invisível</option>
+          </select>
+       </div>
+
+      <div class="checkboxs">
+        <input type="checkbox" name="check__remember" id="check__remember" >
+        <label for="check__remember">Lembrar-me</label>
+      </div>
+      <div class="checkboxs">
+        <input type="checkbox" name="check__password" id="check__password">
+        <label for="check__password">Lembrar minha senha</label>
+      </div>
+      <div class="checkboxs">
+        <input type="checkbox" name="check__automatic" id="check__automatic">
+        <label for="check__automatic">Entrar automaticamnte</label>
+      </div>
+      <p class="recover">Esqueceu sua senha?</p>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>

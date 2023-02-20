@@ -1,0 +1,85 @@
+@import url('./redefinir.css');
+
+#general-container{
+  width: calc(100% - 10%);
+  max-width: 42rem;
+  background: lightblue;
+  margin: 0 auto; 
+  border-radius: 5px;
+}
+
+header {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ padding: 1rem;
+ background: rgba(255,255,255,.8);
+}
+
+header img{
+  width: 2.8rem;
+}
+
+header span{
+font-size: 1.3rem;
+}
+
+#profile {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.profile__picture{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem;
+}
+.profile__picture div{
+  margin-left: 20px;
+}
+.profile__picture div p:first-child{
+  font-size: 2rem;
+  color: #000;
+}
+
+#profile  img{
+ width: 90px;
+ height: 80px;
+ border: 10px solid lightcoral;
+ border-radius: 8px;
+ object-fit: cover;
+}
+
+#search input{
+  width: 50%;
+  margin-left: 10px;
+}
+
+#search input::placeholder{
+  padding: 1rem;
+}
+.answer{
+  padding: 1rem;
+}
+
+.answer-box-details{
+  background: #89D8E6;
+}
+
+.answer-box-details summary{
+  background: #2494A8;
+  font-size: 1.6rem;
+  padding: .5rem;
+}
+.answer-box-details  p{
+  font-size: 1.2rem;
+  padding: .5rem;
+  cursor: pointer;
+  -webkit-user-select:none;  
+  -moz-user-select:none;     
+  -ms-user-select:none;      
+  user-select:none;  
+}
